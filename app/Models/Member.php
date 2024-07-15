@@ -14,5 +14,16 @@ class Member extends Model
         'email',
         'phone_number',
         'icon',
+        'member_category_id',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(MemberCategory::class, 'member_category_id');
+    }
+
+    public static function create10members()
+    {
+        Member::factory()->count(10)->create();
+    }
 }
