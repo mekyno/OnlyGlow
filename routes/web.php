@@ -14,7 +14,7 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
-
+//ss
 
 Route::get('/signup', function () { //route pro Signup Page !!!!!!
     return Inertia::render('Signup');
