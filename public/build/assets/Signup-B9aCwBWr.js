@@ -1,0 +1,1 @@
+import{o as e,f as a,a as t,u as n,F as r,b as o,Z as s}from"./app-CL1ZYoA_.js";const u=o("h1",null,"Signup formular zde",-1),i={__name:"Signup",setup(c){return(l,_)=>(e(),a(r,null,[t(n(s),{title:"Signup"}),u],64))}};export{i as default};

@@ -27,11 +27,11 @@ const props = defineProps({
                     
                     <div>
                         
-                    <div v-for="(category, name) in member_categories" :key="name" class="category">
-                        <h3>{{ name }}</h3>
+                    <div v-for="(category) in member_categories" :key="id" class="category">
+                        <h3>{{ category.name }}</h3>
                         <ul>
                             <li v-for="member in category.members" :key="member.id">
-                                {{ member.name }} - {{ member.email }}
+                                {{ member.name }} - {{ member.email }} - {{ member.phone_number }}
                             </li>
                         </ul>
                     </div>
